@@ -1,0 +1,7 @@
+server :
+  port : 8010
+  context-path : /helloBoot
+
+book :
+  author : wangdongxing
+  name : spring boot
