@@ -33,9 +33,9 @@ public class WsController {
     public void handleChat(Principal principal, String msg) {//在Spring Mvc 中可以用Principal直接获取当前用户信息
         if(principal.getName().equals("wangdongxing")) {// 此处为硬代码，及逻辑代码，可随意更改
             //通过convertAndSendToUser向用户发送消息，参数1：接受消息的用户；参数2：浏览器订阅的地址；参数3：消息
-            template.convertAndSendToUser("admin", "/queue/notidications", principal.getName() + "-send:" + msg);
+            template.convertAndSendToUser("admin", "/queue/notifications", principal.getName() + "-send:" + msg);
         } else {
-            template.convertAndSendToUser("wangdongxing", "/queue/notidications", principal.getName() + "-send:" + msg);
+            template.convertAndSendToUser("wangdongxing", "/queue/notifications", principal.getName() + "-send:" + msg);
         }
     }
 }

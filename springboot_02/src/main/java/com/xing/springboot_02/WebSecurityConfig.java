@@ -1,4 +1,4 @@
-package com.xing.springBoot_02;
+package com.xing.springboot_02;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

@@ -1,4 +1,4 @@
-package com.xing.springBoot_02;
+package com.xing.springboot_02;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -12,6 +12,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter{
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("login");
         registry.addViewController("xing").setViewName("ws");
         registry.addViewController("login").setViewName("login");
         registry.addViewController("chat").setViewName("chat");

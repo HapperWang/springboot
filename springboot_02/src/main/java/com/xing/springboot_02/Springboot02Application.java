@@ -15,13 +15,6 @@ public class Springboot02Application {
 	/*@Autowired
 	private Person person;*/
 
-	@RequestMapping("/")
-	public String login() {
-
-		return "login";
-	}
-
-
 	@RequestMapping("/index")
 	public String index(Model model) {
 		Person person = new Person("wangdongxing", 25);

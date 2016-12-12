@@ -1,4 +1,4 @@
-package com.xing.springBoot_02;
+package com.xing.springboot_02;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;

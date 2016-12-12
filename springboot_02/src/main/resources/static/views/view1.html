@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.min.css">
+
+</head>
+<body>
+    <div class="row">
+        <label for="attr" class="col-md-2 control-label">名称</label>
+
+        <!-- 定义数据模型 -->
+        <div class="col-md-2">
+            <input type="text" class="form-control" ng-model = "personName">
+        </div>
+
+        <!-- 调用控制器中定义的方法 -->
+        <div class="col-md-1">
+            <button class="btn btn-primary" ng-click="search()">查询</button>
+        </div>
+    </div>
+
+    <div class="row dataResouce" style="display: none">
+        <div class="col-md-4">
+            <ul class="list-group">
+                <!-- 通过{{}} 调用模型数据 -->
+                <li class="list-group-item">名字：{{person.name}}</li>
+                <li class="list-group-item">年龄：{{person.age}}</li>
+                <li class="list-group-item">性别：{{person.six}}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
